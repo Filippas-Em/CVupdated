@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #1C1C1C    ;
+    
+}
+
+
+.desktopNav{
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    border-bottom: solid 1px #FF69B4;
+    box-shadow: 0 10px 10px -5px #FF69B4;
+}
+
+.logo{
+    margin-left: 10%;
+}
+.logo a {
+    color: #FF69B4;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.navLinks{
+    margin-left: auto;
+    margin-right: 150px;
+}
+.navLinks ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none   ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navLinks ul li a {
+    background: none;
+    border: 2px solid #FF69B4;
+    margin: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    color: #FF69B4;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.navLinks ul li a:hover {
+    color: #1C1C1C ;
+}
+
+.navLinks ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF69B4 ;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6,0.4,0.7);
+}
+
+
+.navLinks ul li a::before{
+    transform: scaleX(0);
+}
+
+.navLinks ul li a:hover::before{
+    transform: scaleX(1);
+}
+
+#logo {
+    width: 50px;
+}
