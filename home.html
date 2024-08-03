@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    
     <nav>
         <div class="desktopNav">
             <div class="logo">
@@ -32,27 +32,25 @@
         <div class="heroContainer">
             <div class="heroText">
                 <div class="herotypwritter">
-                    <h1><span id="greet">
-                        Hello, I am 
-                        </span><br>
-                        <span id="lastName">
-                        Filippas Emmanouil
-                        </span>
-                    </h1>
-                    <div class="typewriter">                            
-                        <span id="fixed-letter">A </span><span id="text"></span>    
-                        <span id="cursor">|</span>                    
-                    </div>                       
-                </div>
-                </div>
-                <div class="heroButtons">
-                    <a href="">CV</a>
-                    <a href="">GitHub</a>
+                    <div class="typewriterContainer">
+                        <h1>
+                            <span id="greet">Hello, I am</span><br>
+                            <span id="lastName">Filippas Emmanouil</span>
+                        </h1>
+                        <div class="typewriter">
+                            <span id="fixed-letter">A </span><span id="text"></span>
+                            <span id="cursor">|</span>
+                        </div>
+                    </div>
+
+                    <div class="heroButtons">
+                        <a class="hoverlink" href=""><span id="set"><img src="Assets/download.png" alt=""> CV</span></a>
+                        <a class="hoverlink" href=""><span id="set"><img id="git" src="Assets/github.256x249.png" alt=""> GitHub</span></a>
+                   </div>
+                     
                 </div>
             </div>
-            <div class="heroImage">
-                <img id="heroImage" src="Assets/test.png" alt="">
-            </div>
+            <img id="heroImage" src="Assets/test.png" alt="">
         </div>
     </div>
     <script src="script.js"></script>
