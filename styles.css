@@ -135,6 +135,7 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 60px;
+    min-height: 100vh;
 }
 
 .heroContainer{
@@ -167,7 +168,7 @@ a {
 }
 
 .hoverlink:hover{
-    background-color: #ff80c0;
+    background-color: #b94780;
 }
 
 
@@ -178,3 +179,51 @@ a {
 }
 
 
+.aboutImages img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.aboutImages{
+    position: relative;
+    float: left;
+    width: 350px;
+}
+
+#background{
+    position: absolute;
+}
+
+#profile{
+    position: absolute;   
+    top: 40px;
+    left: 40px;
+}
+
+.about{
+    margin-bottom: 200px;
+}
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.aboutContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.aboutText{
+    width: 40%;
+    margin-left: 40px;
+}
+
+#abttxt {
+    font-size: 25px;
+}
