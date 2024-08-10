@@ -227,3 +227,38 @@ a {
 #abttxt {
     font-size: 25px;
 }
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.educationWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.educationTldr{
+    
+}
+
+.row {
+    display: flex;
+    
+}
+
+.eduBox {
+    margin: 20px;
+}
+
+.uniBox{
+    margin-right: 120px;
+}
+.educationText{
+    margin-top: 20px;
+}
