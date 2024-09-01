@@ -12,47 +12,57 @@
   
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <div class="desktopNav">
             <div class="logo">
-                <a href=""><i>EFDev</i></a>
-            </div>
-            <div class="navLinks">
-                <ul>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">flag</a></li>
-                </ul>
+                <a href=""><i>EF</i> <span id="slash">/</span> <SPAN id="subTitle">WEB DEVELOPER</SPAN></a>
+                <div class="navLinks">
+                    <ul>
+                        <li><a href="">About Me</a></li>
+                        <li><a href="">Education</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">flag</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="hero">
-        <div class="heroContainer">
-            <div class="heroText">
-                <div class="herotypwritter">
-                    <div class="typewriterContainer">
-                        <h1>
-                            <span id="greet">Hello, I am</span><br>
-                            <span id="lastName">Filippas Emmanouil</span>
-                        </h1>
-                        <div class="typewriter">
-                            <span id="fixed-letter">A </span><span id="text"></span>
-                            <span id="cursor">|</span>
-                        </div>
+        <div class="heroWrapper">
+            <div class="heroCard">
+                <div class="heroIntro">
+                    <img src="Assets/test.png" alt="">
+                    <h3>Filippas <br>Emmanouil</h3>
+                    <span id="line"></span>
+                    <p>WEB DEVELOPER</p>
+                    <div class="socials">
+                        <a href=""><img id="socialImg" src="Assets/github.256x244.png" alt=""></a>
+                        <a href=""><img id="socialImg" src="Assets/social-linkedin.256x256.png" alt=""></a>
+                        <a href=""><img id="socialImg" src="Assets/instagram-fill.256x256.png" alt=""></a>
                     </div>
-
-                    <div class="heroButtons">
-                        <a class="hoverlink" href=""><span id="set"><img src="Assets/download.png" alt=""> CV</span></a>
-                        <a class="hoverlink" href=""><span id="set"><img id="git" src="Assets/github.256x249.png" alt=""> GitHub</span></a>
-                   </div>
-                     
+                </div>
+                <div class="heroMain">
+                    <h1>Hello</h1>
+                    <div class="herotypwritter">
+                        <div class="typewriterContainer">
+                            <div class="typewriter">
+                                <span>I am A</span>
+                                <br>
+                                <span id="text"></span>
+                                <span id="cursor">|</span>
+                            </div>
+                            <div class="heroBtn">
+                                <a href="">Resume <img src="Assets/download.png" alt=""></a>
+                                <a href="">Projects</a>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis sequi necessitatibus tempore earum in fugiat quae inventore quibusdam numquam ab provident temporibus mollitia quas, aspernatur ducimus vel ipsa, aliquid id.</p>
+                        </div>
                 </div>
             </div>
-            <img id="heroImage" src="Assets/test.png" alt="">
         </div>
+    </div>
     </div>
 
     <div class="about">
@@ -141,6 +151,20 @@
             </div>
         </div>
     </div>
+
+    <div class="contact">
+        <div class="contactWrapper">
+            <div class="contactArea">
+                <h3>Get in Touch</h3>
+                <form action="">
+
+                </form>
+
+                <div class="contactInfo"></div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>
