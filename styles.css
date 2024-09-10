@@ -103,7 +103,7 @@ a {
     align-items: center;
     background: linear-gradient(90deg, #e6dace 40%, #f8f9fa 40%);
     min-height: 500px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .heroCard{
@@ -111,10 +111,11 @@ a {
     width: 100%;
     align-items: center;
     justify-content: center;
-    
+    flex-wrap: wrap;
 }
 
 .heroIntro{
+    order: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,10 +143,11 @@ a {
     letter-spacing: 5px;
 }
 .heroMain{
+    order: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 300px;
+    min-width: 360px;
     padding-left: 50px;
     z-index: 100;
     height: 525px;
@@ -222,7 +224,9 @@ a {
 }
 
 .typewriterContainer p {
-    width: 400px;
+    
+    max-width: 400px;
+    min-width: 300px;
 }
 #text{
     font-size: 40px;
@@ -275,6 +279,7 @@ a {
 }
 
 .aboutContainer{
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -286,7 +291,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .aboutText{
@@ -299,6 +304,7 @@ a {
 }
 
 .education {
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,7 +349,8 @@ a {
 }
 
 .projBox img{
-    width: 350px;
+    min-width: 300px;
+    max-width: 300px;
 }
 
 .projBox {
@@ -427,73 +434,116 @@ a {
 }
 
 
-.contactWrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(25deg, #e6dace 45%, #f8f9fa 30%);;
-    padding: 100px 0;
+html {
+    scroll-behavior: smooth;
 }
 
-.contactArea{
-    background-color: #f4ece6 ;
-    width: 500px;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 
-}
-
-.contactArea h3 {
-    margin-top: 30px;
-    font-size: 34px;
-}
-
-.contactArea form {
-    width: 100%;
-    height: 100%;
+.off-screen-menu{
+    background-color: #f8f9fa;
+    height: 100vh;
+    width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    justify-content: center;
     align-items: center;
-    font-size: 24px;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 1000;
+    
 }
 
-.inputs{
-    position:relative ;
-    width: 90%;
-}
-.inputs label {
-    position: absolute;
-    top: 8px ;
-    left: 2px;
-}
-
-.inputs input {
-    margin-bottom: 50px;
-    width: 100%;
-    height: 40px;
-    font-size: 24px;
-}
-
-.inputs textarea {
-    margin-bottom: 100px;
-    width: 100%;
-    height: 150px;
-}
-
-.sbmt {
-    margin-top: auto;
-    margin-bottom: 40px;
-    font-size: 25px;
-    background-color: #ffffff;
+.off-screen-menu a {
+    text-decoration: none;
     color: black;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 50px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.off-screen-menu ul {
+    list-style-type: none;
+}
+
+.off-screen-menu ul li{
+    margin-bottom: 30px;
+}
+
+.off-screen-menu.active{
+    right: 0;
+}
+
+.hamNav{
+    padding: 1rem;
+    display: flex;
+    
+}
+
+.ham-menu{
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+    z-index: 1001;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.hamNav a {
+    z-index: 1001;
+    color: #1C1C1C;
+    font-size: 25px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+.desktop, .hamNav {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.desktop, .hamNav.visible {
+    transform: translateY(0); 
+}
+
+.desktop:not(.visible), .hamNav:not(.visible) {
+    transform: translateY(-100%); 
 }

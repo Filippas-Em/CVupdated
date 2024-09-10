@@ -1,0 +1,96 @@
+@media screen and (max-width: 1100px) {
+    .desktopNav {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1101px) {
+    .hamNav {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 824px) {
+    .heroWrapper{
+        background: none;
+
+    }
+    .heroIntro{
+        margin: 40px;
+    }
+    .heroMain{
+        padding: 0;
+        margin: 10px;
+    }
+    .aboutContent{
+        margin-top: 0px;
+    }
+    .aboutContainer{
+        padding-top: 100px;
+    }
+    .education{
+        padding-top: 0 ;
+    }
+
+    
+
+    .heroIntro {
+        order: 2;
+    }
+
+    .heroMain {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .typewriter{
+        height: 146px;
+    }
+}
+
+@media screen and (min-width:431px){
+    #homeShort{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #homeLong{
+        display: none;
+    }
+    #homeShort{
+        margin-left: 20px;
+        font-size: 35px;
+    }
+    .off-screen-menu{
+        width: 100vw;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .aboutImages{
+        display: none;
+    }
+    .aboutText{
+        width: 100%;
+        margin: 40px;
+    }
+    .educationWrapper{
+        width: 100%;
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .heroMain{
+        min-width: unset;
+    }
+    .heroBtn{
+        margin: 20px 0px ;
+    }
+}

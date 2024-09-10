@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,16 +12,16 @@
   
 </head>
 <body>
-    <nav id="nav">
+    <nav id="nav" class="desktop">
         <div class="desktopNav">
             <div class="logo">
                 <a href=""><i>EF</i> <span id="slash">/</span> <SPAN id="subTitle">WEB DEVELOPER</SPAN></a>
                 <div class="navLinks">
                     <ul>
-                        <li><a href="">About Me</a></li>
-                        <li><a href="">Education</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="">flag</a></li>
                     </ul>
                 </div>
@@ -29,7 +29,27 @@
         </div>
     </nav>
 
-    <div class="hero">
+    <div class="off-screen-menu">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="">flag</a></li>
+        </ul>
+    </div>
+    <nav class="hamNav">
+        <a href="" id="homeLong"><i>EF</i> <span id="slash">/</span> <SPAN id="subTitle">WEB DEVELOPER</SPAN></a>
+        <a href="" id="homeShort"><i>Filippas</i></a>
+
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div id="hero" class="hero">
         <div class="heroWrapper">
             <div class="heroCard">
                 <div class="heroIntro">
@@ -65,7 +85,7 @@
     </div>
     </div>
 
-    <div class="about">
+    <div id="about" class="about">
         <div class="aboutContainer">
             <h2>About Me</h2>
             <div class="aboutContent">
@@ -83,7 +103,7 @@
         </div>
     </div>
 
-    <div class="education">
+    <div id="education" class="education">
         
         <div class="educationWrapper">
             <h3>Education</h3>
@@ -103,7 +123,7 @@
         </div>
     </div>
 
-    <div class="projects">
+    <div id="projects" class="projects">
         <div class="projectsWrapper">
             <div class="projectsBoxes">
                 <div class="projBox">
@@ -155,31 +175,20 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contactWrapper">
-            <div class="contactArea">
-                <h3>Message Me !</h3>
+            <h3>Get in Touch</h3>
+            <div class="contactContainer">
                 <form action="">
-                    <div class="inputs">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="">
-                    </div>
-                    <div class="inputs">
-                        <label for="email">email</label>
-                        <input type="email" name="email" id="">
-                    </div>
-                    <div class="inputs">
-                        <label for="">Message</label>
-                        <textarea name="message" id=""></textarea>
-                    </div>
-                    <input class="sbmt" type="submit" value="Send" >
-                </form>
 
-                <div class="contactInfo"></div>
+                </form>
+                <div class="contactInfo">
+                    
+                </div>
+
             </div>
         </div>
     </div>
-
 
     <script src="script.js"></script>
 </body>
