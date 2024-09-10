@@ -101,3 +101,33 @@ window.addEventListener('scroll', () => {
     // Update the last scroll position
     lastScrollY = currentScrollY;
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const inputs = document.querySelectorAll('.formGroup input, .formGroup textarea');
+
+  inputs.forEach(input => {
+      const label = input.previousElementSibling;
+
+      if (input.value) {
+          label.style.transform = "translateY(-20px)";
+          
+      }
+
+      input.addEventListener('focus', function() {
+          label.style.transform = "translateY(-25px)";
+          label.style.fontSize = "15px";
+          label.style.color = "black";
+      });
+
+      input.addEventListener('blur', function() {
+          if (!this.value) {
+              label.style.transform = "translateY(0px)";
+              label.style.fontSize = "23px";
+          }
+      });
+  });
+});
+

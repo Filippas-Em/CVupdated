@@ -22,7 +22,6 @@
                         <li><a href="#education">Education</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="">flag</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +34,6 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="">flag</a></li>
         </ul>
     </div>
     <nav class="hamNav">
@@ -177,12 +175,50 @@
 
     <div class="contact" id="contact">
         <div class="contactWrapper">
-            <h3>Get in Touch</h3>
+            
             <div class="contactContainer">
                 <form action="">
-
+                    <h2>Send a Message</h2>
+                    <div class="contactForm">
+                        <div class="formGroup">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </div>
                 </form>
-                <div class="contactInfo">
+                <span id="coll"></span>
+                
+                <div class="contactAddress">
+                    <h2>Get in Touch</h2>
+                    <div class="infoLinks">
+                        <p>
+                            <a href="https://www.google.com/maps?q=Laskaridou+54,+Kallithea+176+76,+Athens" target="_blank">
+                                <img src="Assets/location.png" alt="addressIcon">
+                                Laskaridou 54, Kallithea 176 76, Athens
+                            </a>
+                        </p>
+                        <p>
+                            <a href="tel:+306943694628">
+                                <img src="Assets/smartphone-call.png" alt="phoneIcon">
+                                (+30) 694 369 4628
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:emmanouil.filippas@gmail.com">
+                                <img src="Assets/mail.png" alt="emailIcon">
+                                emmanouil.filippas@gmail.com
+                            </a>
+                        </p> 
+                    </div>
                     
                 </div>
 
@@ -192,4 +228,4 @@
 
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
