@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  
+    <link rel="icon" href="Assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Assets/favicon.png" type="image/x-icon">
+    
 </head>
 <body>
     <nav id="nav" class="desktop">
@@ -49,7 +51,7 @@
 
     <div id="hero" class="hero">
         <div class="heroWrapper">
-            <div class="heroCard">
+            <div class="heroCard hidden">
                 <div class="heroIntro">
                     <img src="Assets/test.png" alt="">
                     <h3>Filippas <br>Emmanouil</h3>
@@ -86,7 +88,7 @@
     <div id="about" class="about">
         <div class="aboutContainer">
             <h2>About Me</h2>
-            <div class="aboutContent">
+            <div class="aboutContent hiddenLeft">
                 <div class="aboutImages">
                     <img id="background" src="Assets/background.JPEG" alt="">
                     <img id="profile" src="Assets/profilepic.JPEG" alt="">
@@ -101,7 +103,7 @@
 
     <div id="education" class="education">
         
-        <div class="educationWrapper">
+        <div class="educationWrapper hiddenLeft">
             <h3>Education</h3>
             <div class="educationText">
                 <p>I am currently a third-year undergraduate student at the University of Piraeus, where I am pursuing a degree in Computer Science. Throughout my academic journey, I have demonstrated a strong commitment to expanding my knowledge and skills, both through my university coursework and by completing several online courses. These experiences have provided me with a solid foundation and a deep understanding of core web development technologies, including HTML, CSS, JavaScript, PHP, and SQL.Moreover, I have taken the initiative to familiarize myself with advanced tools and frameworks such as React, MongoDB, Express, GitHub, and APIs. My hands-on experience with these technologies has enabled me to develop a comprehensive toolkit, which I am eager to apply in real-world projects and professional settings. I am passionate about continuing to learn and grow in the field of computer science, and I am confident in my ability to contribute effectively to any development team.</p>
@@ -122,7 +124,7 @@
     <div id="projects" class="projects">
         <div class="projectsWrapper">
             <div class="projectsBoxes">
-                <div class="projBox">
+                <div class="projBox hiddenLeft">
                     <h3>PixelPerfect <a href="https://github.com/Filippas-Em/PixelPerfect" target="_blank"><img id="socialImg" src="Assets/github.256x244.png" alt=""></a></h3>
                     <img src="Assets/pixelPerfectTemp.png" alt="">
                     <span id="dash"></span>
@@ -135,9 +137,9 @@
                             <p>Html Css JavaScript nodeJs</p>
                         </div>
                     </div>
-                    <a class="projectButton" href="">Check it out!</a>
+                    <a class="projectButton" href="" target="_blank">Check it out!</a>
                 </div>
-                <div class="projBox">
+                <div class="projBox hiddenLeft">
                     <h3>WeatherApp <a href="https://github.com/Filippas-Em/WeatherApp" target="_blank"><img id="socialImg" src="Assets/github.256x244.png" alt=""></a></h3>
                     <img src="Assets/weatherAppTemp.png" alt="">
                     <span id="dash"></span>
@@ -150,9 +152,9 @@
                             <p>Html Css JavaScript</p>
                         </div>
                     </div>
-                    <a class="projectButton" href="">Check it out!</a>
+                    <a class="projectButton" href="" target="_blank">Check it out!</a>
                 </div>
-                <div class="projBox">
+                <div class="projBox hiddenLeft">
                     <h3>GuestNest <a href="https://github.com/Filippas-Em/GuestNest" target="_blank"><img id="socialImg" src="Assets/github.256x244.png" alt=""></a></h3>
                     <img src="Assets/guestNestMockup.png" alt="">
                     <span id="dash"></span>
@@ -165,7 +167,7 @@
                             <p>Html Css JavaScript PHP MySQL</p>
                         </div>
                     </div>
-                    <a class="projectButton" href="http://filippas.works/index.php">Check it out!</a>
+                    <a class="projectButton" href="http://filippas.works/index.php" target="_blank">Check it out!</a>
                 </div>
             </div>
         </div>
@@ -174,7 +176,7 @@
     <div class="contact" id="contact">
         <div class="contactWrapper">
             
-            <div class="contactContainer">
+            <div class="contactContainer hidden">
                 <form action="">
                     <h2>Send a Message</h2>
                     <div class="contactForm">
