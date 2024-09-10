@@ -657,3 +657,12 @@ form button:hover {
     margin-right: 10px;
     width: 30px;
 }
+.footerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1C1C1C;
+    color: white;
+    padding: 20px;
+}
