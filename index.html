@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="Assets/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="/Assets/favicon.png" type="image/x-icon">
-    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </head>
 <body>
     <nav id="nav" class="desktop">
@@ -137,7 +138,7 @@
                             <p>Html Css JavaScript nodeJs</p>
                         </div>
                     </div>
-                    <a class="projectButton" href="" target="_blank">Check it out!</a>
+                    <a class="projectButton" href="https://pxlperfect.online" target="_blank">Check it out!</a>
                 </div>
                 <div class="projBox hiddenLeft">
                     <h3>WeatherApp <a href="https://github.com/Filippas-Em/WeatherApp" target="_blank"><img id="socialImg" src="Assets/github.256x244.png" alt=""></a></h3>
@@ -152,7 +153,7 @@
                             <p>Html Css JavaScript</p>
                         </div>
                     </div>
-                    <a class="projectButton" href="" target="_blank">Check it out!</a>
+                    <a class="projectButton" href="https://efweather.online" target="_blank">Check it out!</a>
                 </div>
                 <div class="projBox hiddenLeft">
                     <h3>GuestNest <a href="https://github.com/Filippas-Em/GuestNest" target="_blank"><img id="socialImg" src="Assets/github.256x244.png" alt=""></a></h3>
@@ -177,7 +178,7 @@
         <div class="contactWrapper">
             
             <div class="contactContainer hidden">
-                <form action="">
+                <form id="contactForm" action="send_mail.php" method="POST">
                     <h2>Send a Message</h2>
                     <div class="contactForm">
                         <div class="formGroup">
@@ -192,7 +193,8 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                         </div>
-                        <button type="submit">Send</button>
+                        <div id="responseMessage"></div>
+                    <button type="submit">Send</button>
                     </div>
                 </form>
                 <span id="coll"></span>
@@ -230,8 +232,12 @@
             <div class="footerContent">
                 <p>© 2024 Filippas Emmanouil. All rights reserved.</p>
                 
+            </div>
+        </div>
     </footer>
+    
 
     <script src="script.js"></script>
+    <script src="emailFunc.js"></script>
 </body>
 </html> 
